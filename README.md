@@ -1,32 +1,10 @@
-## Micronaut 2.4.0 Documentation
+## Micronaut 2.4.0 Swagger Demo Application Documentation
 
-- [User Guide](https://docs.micronaut.io/2.4.0/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.4.0/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.4.0/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+Micronaut application for Swagger with native-image build
 
-## Feature lombok documentation
-
-- [Micronaut Project Lombok documentation](https://docs.micronaut.io/latest/guide/index.html#lombok)
-
-- [https://projectlombok.org/features/all](https://projectlombok.org/features/all)
-
-## Feature http-client documentation
-
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
-## Feature jetty-server documentation
-
-- [Micronaut Jetty Server documentation](https://micronaut-projects.github.io/micronaut-servlet/1.0.x/guide/index.html#jetty)
-
-## Feature openapi documentation
-
-- [Micronaut OpenAPI Support documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
-
-- [https://www.openapis.org](https://www.openapis.org)
-
-## Feature management documentation
-
-- [Micronaut Management documentation](https://docs.micronaut.io/latest/guide/index.html#management)
-
+1) Run native image build using below command
+    native-image --no-fallback -cp ..\build\libs\swaggerdemo-0.1-all.jar
+2) Access swagger documentation using below url
+   http://localhost:8080/swagger/swaggerdemo-0.0.yml
+3) Access swagger-ui/redoc/rapidoc using the below url
+   http://localhost:8080/[redoc|rapidoc|swagger-ui]
