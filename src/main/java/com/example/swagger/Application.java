@@ -1,17 +1,18 @@
 package com.example.swagger;
 
+import io.micronaut.core.annotation.Introspected;
 import io.micronaut.runtime.Micronaut;
-import io.swagger.v3.oas.annotations.*;
-import io.swagger.v3.oas.annotations.info.*;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 
 @OpenAPIDefinition(
-    info = @Info(
-            title = "swaggerdemo",
-            version = "0.0"
-    )
+        info = @Info(
+                title = "swaggerdemo",
+                version = "0.0"
+        )
 )
+@Introspected
 public class Application {
-
     public static void main(String[] args) {
         Micronaut.run(Application.class, args);
     }
